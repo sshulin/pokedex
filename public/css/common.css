@@ -1,0 +1,272 @@
+/* Pokedex colors */
+body {
+  margin: 0;
+}
+h1 {
+  border-left: 3px solid #dc0a2d;
+  display: inline-block;
+  font-size: 32px;
+  line-height: 28px;
+  padding-left: 20px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+h1,
+h2 {
+  position: relative;
+  border-left: 5px solid #dc0a2d;
+}
+h2:after {
+  background: #dc0a2d;
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 2px;
+}
+h1:after,
+h2:after {
+  display: none;
+  left: 2px;
+}
+h1:before {
+  left: 2px;
+}
+.wrapperOuter {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 0 25px;
+  width: 100%;
+}
+.header {
+  display: flex;
+}
+.pokelist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.pokelist__card {
+  align-items: center;
+  background: #dedede;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 5px 5px 3px #ababab;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 500px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.pokelist__card._color_bug {
+  background: #d4e35b;
+  border-color: #596111;
+}
+.pokelist__card._color_dragon {
+  background: #b79bfb;
+  border-color: #3e07c3;
+}
+.pokelist__card._color_electric {
+  background: #fbe693;
+  border-color: #bc9706;
+}
+.pokelist__card._color_fairy {
+  background: #fdf0f3;
+  border-color: #df4265;
+}
+.pokelist__card._color_fire {
+  background: #f7ba8f;
+  border-color: #ad500d;
+}
+.pokelist__card._color_flying {
+  background: #eeeafc;
+  border-color: #6236e4;
+}
+.pokelist__card._color_grass {
+  background: #b4e09e;
+  border-color: #4a872b;
+}
+.pokelist__card._color_normal {
+  background: #d0d0b6;
+  border-color: #717149;
+}
+.pokelist__card._color_poison {
+  background: #ca7cca;
+  border-color: #572357;
+}
+.pokelist__card._color_water {
+  background: #c5d4f9;
+  border-color: #1650dc;
+}
+.pokelist__card:hover {
+  transform: scale(1.1);
+}
+.pokelist__title {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  color: black;
+  font-size: 1.6em;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 80%;
+}
+.pokelist__typeList {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 80%;
+}
+.pokelist__oneType {
+  border-radius: 5px;
+  color: white;
+  margin: 0 2px;
+  padding: 3px;
+}
+.pokelist__oneType._type_bug {
+  background: #A8B820;
+}
+.pokelist__oneType._type_dragon {
+  background: #7038F8;
+}
+.pokelist__oneType._type_electric {
+  background: #F8D030;
+}
+.pokelist__oneType._type_fairy {
+  background: #EE99AC;
+}
+.pokelist__oneType._type_flying {
+  background: #A890F0;
+}
+.pokelist__oneType._type_grass {
+  background: #78C850;
+}
+.pokelist__oneType._type_fire {
+  background: #F08030;
+}
+.pokelist__oneType._type_normal {
+  background: #A8A878;
+}
+.pokelist__oneType._type_poison {
+  background: #A040A0;
+}
+.pokelist__oneType._type_water {
+  background: #6890F0;
+}
+.pokelist__idBlock {
+  align-items: center;
+  display: flex;
+  color: black;
+  flex-direction: row-reverse;
+  height: 25px;
+  width: 80%;
+  display: none;
+}
+.pokelist__idNum {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding: 2px;
+}
+.pokelist__imageWrap {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  display: flex;
+  height: 50%;
+  padding: 10px 0;
+  width: 80%;
+}
+.pokelist__imageItem {
+  margin: auto;
+  max-height: 100%;
+}
+.pokeFilter {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 70px;
+  justify-content: center;
+  width: 100%;
+}
+.pokeFilter__item {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 50px;
+  justify-content: space-between;
+  margin: auto 10px;
+}
+.pokeFilter__label {
+  font-weight: bold;
+  width: 100%;
+}
+.pokeFilter__input {
+  border-radius: 5px;
+  height: 24px;
+  width: 100%;
+}
+@media all and (max-width: 479px) {
+  .pokelist__title {
+    font-size: 2.2em;
+    height: 60px;
+    line-height: 60px;
+  }
+  .pokelist__typeList {
+    height: 40px;
+  }
+  .pokelist__oneType {
+    margin: 0 5px;
+    padding: 5px;
+  }
+}
+@media all and (min-width: 480px) {
+  .pokelist__card {
+    justify-content: space-between;
+  }
+  .pokelist__title,
+  .pokelist__typeList {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 679px) {
+  .pokelist__card {
+    height: 300px;
+    width: 45%;
+  }
+}
+@media all and (min-width: 680px) and (max-width: 799px) {
+  .pokelist {
+    justify-content: space-between;
+  }
+  .pokelist__card {
+    height: 250px;
+    width: 190px;
+  }
+}
+@media all and (min-width: 800px) {
+  .pokelist__card {
+    height: 250px;
+    width: 190px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .wrapperOuter {
+    padding: 0;
+    width: 1000px;
+  }
+}

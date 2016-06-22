@@ -1,0 +1,46 @@
+<div class="pokeFilter">
+	<div class="pokeFilter__item">
+		<div class="pokeFilter__label">
+			Type:
+		</div>
+		<select class="pokeFilter__input" ng-model="$ctrl.query">
+			<option value="">
+				All types
+			</option>
+			<option ng-repeat="type in $ctrl.types" value="{{ type }}">
+				{{ type }}
+			</option>
+		</select>
+	</div>
+	<div class="pokeFilter__item">
+		<div class="pokeFilter__label">Sort by:</div>
+		<select class="pokeFilter__input" ng-model="$ctrl.orderProp">
+			<option value="id" selected="selected">
+				ID
+			</option>
+			<option value="name">
+				Name
+			</option>
+		</select>
+	</div>
+</div>
+<div class="pokelist">
+	<a ng-repeat="pokemon in $ctrl.pokemons | filter:$ctrl.query | orderBy:$ctrl.orderProp " class="pokelist__card _color_{{ pokemon.types[0].class }}" href="#/pokemons/{{ pokemon.name }}">
+		<div class="pokelist__title">
+			{{ pokemon.name }}
+		</div>
+		<div class="pokelist__imageWrap">
+			<img src="img/{{ pokemon.name }}.png" class="pokelist__imageItem">
+		</div>
+		<div class="pokelist__typeList">
+			<div ng-repeat="type in pokemon.types" class="pokelist__oneType _type_{{ type.class }}">
+				{{ type.text }}
+			</div>
+		</div>
+		<div class="pokelist__idBlock">
+			<div class="pokelist__idNum">
+				{{ pokemon.id }}
+			</div>
+		</div>
+	</a>
+</div>

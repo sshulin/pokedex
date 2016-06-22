@@ -1,0 +1,222 @@
+[
+  {
+    "id": "001",
+    "name": "bulbasaur",
+    "color": "green",
+    "types": [
+      {
+        "class": "grass",
+        "text": "grass"
+      }, {
+        "class": "poison",
+        "text": "poison"
+      }
+    ]
+  }, {
+    "id": "002",
+    "name": "ivysaur",
+    "color": "green",
+    "types": [
+      {
+        "class": "grass",
+        "text": "grass"
+      }, {
+        "class": "poison",
+        "text": "poison"
+      }
+    ]
+  }, {
+    "id": "003",
+    "name": "venusaur",
+    "color": "green",
+    "types": [
+      {
+        "class": "grass",
+        "text": "grass"
+      }, {
+        "class": "poison",
+        "text": "poison"
+      }
+    ]
+  }, {
+    "id": "004",
+    "name": "charmander",
+    "color": "red",
+    "types": [
+      {
+        "class": "fire",
+        "text": "fire"
+      }
+    ]
+  }, {
+    "id": "005",
+    "name": "charmeleon",
+    "color": "red",
+    "types": [
+      {
+        "class": "fire",
+        "text": "fire"
+      }
+    ]
+  }, {
+    "id": "006",
+    "name": "charizard",
+    "color": "red",
+    "types": [
+      {
+        "class": "fire",
+        "text": "fire"
+      }, {
+        "class": "flying",
+        "text": "flying"
+      }
+    ]
+  }, {
+    "id": "007",
+    "name": "squirtle",
+    "types": [
+      {
+        "class": "water",
+        "text": "water"
+      }
+    ]
+  }, {
+    "id": "008",
+    "name": "wartortle",
+    "types": [
+      {
+        "class": "water",
+        "text": "water"
+      }
+    ]
+  }, {
+    "id": "009",
+    "name": "blastoise",
+    "types": [
+      {
+        "class": "water",
+        "text": "water"
+      }
+    ]
+  }, {
+    "id": "010",
+    "name": "caterpie",
+    "types": [
+      {
+        "class": "bug",
+        "text": "bug"
+      }
+    ]
+  }, {
+    "id": "011",
+    "name": "metapod",
+    "types": [
+      {
+        "class": "bug",
+        "text": "bug"
+      }
+    ]
+  }, {
+    "id": "012",
+    "name": "butterfree",
+    "types": [
+      {
+        "class": "bug",
+        "text": "bug"
+      }, {
+        "class": "flying",
+        "text": "flying"
+      }
+    ]
+  }, {
+    "id": "013",
+    "name": "weedle",
+    "types": [
+      {
+        "class": "bug",
+        "text": "bug"
+      }, {
+        "class": "poison",
+        "text": "poison"
+      }
+    ]
+  }, {
+    "id": "014",
+    "name": "kakuna",
+    "types": [
+      {
+        "class": "bug",
+        "text": "bug"
+      }, {
+        "class": "poison",
+        "text": "poison"
+      }
+    ]
+  }, {
+    "id": "015",
+    "name": "beedrill",
+    "types": [
+      {
+        "class": "bug",
+        "text": "bug"
+      }, {
+        "class": "poison",
+        "text": "poison"
+      }
+    ]
+  }, {
+    "id": "016",
+    "name": "pidgey",
+    "types": [
+      {
+        "class": "normal",
+        "text": "normal"
+      }, {
+        "class": "flying",
+        "text": "flying"
+      }
+    ]
+  }, {
+    "id": "017",
+    "name": "pidgeotto",
+    "types": [
+      {
+        "class": "normal",
+        "text": "normal"
+      }, {
+        "class": "flying",
+        "text": "flying"
+      }
+    ]
+  }, {
+    "id": "018",
+    "name": "pidgeot",
+    "types": [
+      {
+        "class": "normal",
+        "text": "normal"
+      }, {
+        "class": "flying",
+        "text": "flying"
+      }
+    ]
+  }, {
+    "id": "019",
+    "name": "rattata",
+    "types": [
+      {
+        "class": "normal",
+        "text": "normal"
+      }
+    ]
+  }, {
+    "id": "020",
+    "name": "raticate",
+    "types": [
+      {
+        "class": "normal",
+        "text": "normal"
+      }
+    ]
+  }
+]

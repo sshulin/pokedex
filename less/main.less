@@ -1,0 +1,291 @@
+/* Pokedex colors */
+@pokered: #dc0a2d;
+@pokegray: #dedede;
+@pokeblue: #6890f0;
+
+@typeBug: #A8B820;
+@typeDragon: #7038F8;
+@typeElectric: #F8D030;
+@typeFairy: #EE99AC;
+@typeFire: #F08030;
+@typeFlying: #A890F0;
+@typeGrass: #78C850;
+@typeGround: #E0C068;
+@typeNormal: #A8A878;
+@typePoison: #A040A0;
+@typeWater: #6890F0;
+
+.transition(@sec: 0.3s){
+	-webkit-transition: @sec;
+	-moz-transition: @sec;
+	-ms-transition: @sec;
+	-o-transition: @sec;
+	transition: @sec;
+}
+.cardStyler(@color: @pokegray) {
+	background: lighten(@color, 20%);
+	border-color: darken(@color, 20%);
+}
+
+body {
+	margin: 0;
+}
+h1 {
+	border-left: 3px solid @pokered;
+	display: inline-block;
+	font-size: 32px;
+	line-height: 28px;
+	padding-left: 20px;
+	margin: 20px auto;
+	text-transform: uppercase;
+}
+h1, h2 {
+	position: relative;
+	border-left: 5px solid @pokered;
+}
+h2:after {
+	background: @pokered;
+	content: ' ';
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	width: 2px;
+}
+h1:after, 
+h2:after {
+	display: none;
+	left: 2px;
+}
+h1:before {
+	left: 2px;
+}
+.wrapperOuter {
+	box-sizing: border-box;
+	margin: 0 auto;
+	min-height: 100px;
+	padding: 0 25px;
+	width: 100%;
+}
+.header {
+	display: flex;
+
+}
+.pokelist {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+	.pokelist__card {
+		align-items: center;
+		background: @pokegray;
+		border-style: solid;
+		border-radius: 15px;
+		border-width: 1px;
+		box-shadow: 5px 5px 3px darken(@pokegray, 20%);
+		display: flex;
+		flex-flow: column nowrap;
+		height: 500px;
+		justify-content: space-around;
+		margin-bottom: 20px;
+		overflow: hidden;
+		text-decoration: none;
+		width: 100%;
+		.transition();
+		&._color_bug {
+			.cardStyler(@typeBug);
+		}
+		&._color_dragon {
+			.cardStyler(@typeDragon);
+		}
+		&._color_electric {
+			.cardStyler(@typeElectric);
+		}
+		&._color_fairy {
+			.cardStyler(@typeFairy);
+		}
+		&._color_fire {
+			.cardStyler(@typeFire);
+		}
+		&._color_flying {
+			.cardStyler(@typeFlying);
+		}
+		&._color_grass {
+			.cardStyler(@typeGrass);
+		}
+		&._color_normal {
+			.cardStyler(@typeNormal);
+		}
+		&._color_poison {
+			.cardStyler(@typePoison);
+		}
+		&._color_water {
+			.cardStyler(@typeWater);
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+		.pokelist__title {
+			background: rgba(255,255,255,0.75);
+			border-radius: 5px;
+			color: black;
+			font-size: 1.6em;
+			font-weight: bold;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			text-transform: capitalize;
+			width: 80%;
+		}
+		.pokelist__typeList {
+			align-items: center;
+			background: rgba(255,255,255,0.75);
+			border-radius: 5px;
+			display: flex;
+			height: 30px;
+			justify-content: center;
+			width: 80%;
+		}
+			.pokelist__oneType {
+				border-radius: 5px;
+				color: white;
+				margin: 0 2px;
+				padding: 3px;
+
+				&._type_bug {
+					background: @typeBug;
+				}
+				&._type_dragon {
+					background: @typeDragon;
+				}
+				&._type_electric {
+					background: @typeElectric;
+				}
+				&._type_fairy {
+					background: @typeFairy;
+				}
+				&._type_flying {
+					background: @typeFlying;
+				}
+				&._type_grass {
+					background: @typeGrass;
+				}
+				&._type_fire {
+					background: @typeFire;
+				}
+				&._type_normal {
+					background: @typeNormal;
+				}
+				&._type_poison {
+					background: @typePoison;
+				}
+				&._type_water {
+					background: @typeWater;
+				}
+			}
+		.pokelist__idBlock {
+			align-items: center;
+			display: flex;
+			color: black;
+			flex-direction: row-reverse;
+			height: 25px;
+			width: 80%;
+
+
+			display: none;
+		}
+			.pokelist__idNum {
+				background: rgba(255,255,255,0.25);
+				border-radius: 5px;
+				padding: 2px;
+			}
+		.pokelist__imageWrap {
+			background: rgba(255, 255, 255, 0.75);
+			border-radius: 5px;
+			display: flex;
+			height: 50%;
+			padding: 10px 0;
+			width: 80%;
+		}
+			.pokelist__imageItem {
+				margin: auto;
+				max-height: 100%;
+			}
+
+.pokeFilter {
+	display: flex;
+	flex-flow: row nowrap;
+	height: 70px;
+	justify-content: center;
+	width: 100%;
+}
+	.pokeFilter__item {
+		display: flex;
+		flex-flow: column nowrap;
+		height: 50px;
+		justify-content: space-between;
+		margin: auto 10px;
+	}
+		.pokeFilter__label {
+			font-weight: bold;
+			width: 100%;
+		}
+		.pokeFilter__input {
+			border-radius: 5px;
+			height: 24px;
+			width: 100%;
+		}
+@media all and (max-width: 479px) {
+	.pokelist__title {
+		font-size: 2.2em;
+		height: 60px;
+		line-height: 60px;
+	}
+	.pokelist__typeList {
+		height: 40px;
+	}
+	.pokelist__oneType {
+		margin: 0 5px;
+		padding: 5px;
+	}
+}
+@media all and (min-width: 480px) {
+	.pokelist__card {
+		justify-content: space-between;
+	}
+	.pokelist__title,
+	.pokelist__typeList {
+		border-radius: 0;
+		width: 100%;
+	}
+}
+@media all and (min-width: 480px) and (max-width: 679px) {
+	.pokelist__card {
+		height: 300px;
+		width: 45%;
+	}	
+}
+@media all and (min-width: 680px) and (max-width: 799px) {
+	.pokelist {
+		justify-content: space-between;		
+	}
+	.pokelist__card {
+		height: 250px;
+		width: 190px;
+	}
+}
+@media all and (min-width: 800px) {
+	.pokelist__card {
+		height: 250px;
+		height: 250px;
+		width: 190px;
+	}	
+}
+@media all and (min-width: 1024px) {
+	.wrapperOuter {
+		padding: 0;
+		width: 1000px;
+	}
+}
