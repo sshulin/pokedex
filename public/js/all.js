@@ -28,8 +28,46 @@ angular.
 				}
 			]
 		});
+// Define the 'pokeList' module
+angular.module('pokeDetail', [
+	'ngRoute'
+	]);
+// Register the 'pokeList' component on the 'pokeList' module,
+angular.
+	module('pokeDetail').
+		component('pokeDetail', {
+			templateUrl: 'js/angular/poke-detail/poke-detail.template.html',
+			controller: ['$http', '$routeParams', 
+				function PokeDetailController($http, $routeParams) {
+					var self = this;
+					this.pokeName = $routeParams.pokeName;
+
+					$http.get('pokemons/' + $routeParams.pokeName + '.json').then(function(response){
+						self.pokemon = response.data;
+					})
+				}
+			]
+		});
 // Define module 
 angular.module('pokeApp', [
 	// ... which depends on the 'pokeList' module
-	'pokeList'
+	'ngRoute',
+	'pokeList',
+	'pokeDetail'
 	]);
+angular.
+	module('pokeApp').
+		config(['$locationProvider', '$routeProvider', 
+			function config($locationProvider, $routeProvider) {
+				$locationProvider.hashPrefix('!');
+
+				$routeProvider.
+					when('/pokemons', {
+						template: '<poke:list></poke:list>'
+					}).
+					when('/pokemons/:pokeName', {
+						template: '<poke:detail></poke:detail>'
+					}).
+					otherwise('/pokemons');
+			}
+			]);

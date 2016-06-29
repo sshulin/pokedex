@@ -25,12 +25,13 @@
 	</div>
 </div>
 <div class="pokelist">
-	<a ng-repeat="pokemon in $ctrl.pokemons | filter:$ctrl.query | orderBy:$ctrl.orderProp " class="pokelist__card _color_{{ pokemon.types[0].class }}" href="#/pokemons/{{ pokemon.name }}">
+	<a ng-repeat="pokemon in $ctrl.pokemons | filter:$ctrl.query | orderBy:$ctrl.orderProp " class="pokelist__card _color_{{ pokemon.types[0].class }}" href="#!/pokemons/{{ pokemon.name }}">
 		<div class="pokelist__title">
 			{{ pokemon.name }}
 		</div>
 		<div class="pokelist__imageWrap">
-			<img src="img/{{ pokemon.name }}.png" class="pokelist__imageItem">
+			<img src="img/{{ pokemon.name }}.png" class="pokelist__imageItem
+			">
 		</div>
 		<div class="pokelist__typeList">
 			<div ng-repeat="type in pokemon.types" class="pokelist__oneType _type_{{ type.class }}">

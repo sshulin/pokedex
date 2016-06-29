@@ -1,0 +1,14 @@
+{
+  "id": "016",
+  "name": "pidgey",
+  "types": [
+    {
+      "class": "normal",
+      "text": "normal"
+    }, {
+      "class": "flying",
+      "text": "flying"
+    }
+  ],
+  "description": "Pidgey is a small, plump-bodied avian Pokémon. It is primarily brown with a cream-colored face, underside, and flight feathers. Both its feet and beak are a pinkish-gray color. It has black, angular markings around its eyes and a small crest of brown and cream feathers above its eyes."
+}

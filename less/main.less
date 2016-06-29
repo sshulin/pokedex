@@ -237,6 +237,188 @@ h1:before {
 			height: 24px;
 			width: 100%;
 		}
+
+.pokedetail {
+	align-items: stretch;
+	background: @pokegray;
+	border-style: solid;
+	border-radius: 15px;
+	border-width: 1px;
+	box-shadow: 5px 5px 3px darken(@pokegray, 20%);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 100%;
+	.transition();
+	&._color_bug {
+		.cardStyler(@typeBug);
+	}
+	&._color_dragon {
+		.cardStyler(@typeDragon);
+	}
+	&._color_electric {
+		.cardStyler(@typeElectric);
+	}
+	&._color_fairy {
+		.cardStyler(@typeFairy);
+	}
+	&._color_fire {
+		.cardStyler(@typeFire);
+	}
+	&._color_flying {
+		.cardStyler(@typeFlying);
+	}
+	&._color_grass {
+		.cardStyler(@typeGrass);
+	}
+	&._color_normal {
+		.cardStyler(@typeNormal);
+	}
+	&._color_poison {
+		.cardStyler(@typePoison);
+	}
+	&._color_water {
+		.cardStyler(@typeWater);
+	}
+}
+	.pokedetail__imageWrap {
+		background: rgba(255,255,255,0.75);
+		display: flex;
+		flex-flow: column;
+    	justify-content: center;
+		width: 100%;
+	}
+	.pokedetail__imageItem {
+		height: auto;
+		margin: 0;
+		padding: 10px;
+		max-width: 100%;
+	}
+	.pokedetail__info {
+		box-sizing: border-box;
+		display: flex;
+		flex-flow: column;
+		padding: 20px;
+		width: 100%;
+	}
+		.pokedetail__title {
+			background: rgba(255,255,255,0.75);
+			border-radius: 5px;
+			height: 40px;
+			font-size: 1.6em;
+			font-weight: bold;
+			line-height: 40px;
+			padding: 0 20px;
+			text-align: center;
+			text-transform: capitalize;
+		}
+		.pokedetail__typeList {
+		align-items: center;
+		background: rgba(255,255,255,0.75);
+		border-radius: 5px;
+		display: flex;
+		height: 30px;
+		justify-content: center;
+		margin: 10px 0;
+		}
+		.pokedetail__oneType {
+			border-radius: 5px;
+			color: white;
+			margin: 0 2px;
+			padding: 3px;
+
+			&._type_bug {
+				background: @typeBug;
+			}
+			&._type_dragon {
+				background: @typeDragon;
+			}
+			&._type_electric {
+				background: @typeElectric;
+			}
+			&._type_fairy {
+				background: @typeFairy;
+			}
+			&._type_flying {
+				background: @typeFlying;
+			}
+			&._type_grass {
+				background: @typeGrass;
+			}
+			&._type_fire {
+				background: @typeFire;
+			}
+			&._type_normal {
+				background: @typeNormal;
+			}
+			&._type_poison {
+				background: @typePoison;
+			}
+			&._type_water {
+				background: @typeWater;
+			}
+		}
+		.pokedetail__text {
+			background: rgba(255,255,255,0.75);
+			border-radius: 5px;
+			line-height: 1.6em;
+			padding: 20px;
+		}
+.nav {
+	display: flex;
+	height: 50px;
+}
+	.nav__backlink {
+		border-radius: 15px;
+		border-style: solid;
+		border-width: 1px;
+		box-shadow: 5px 5px 3px darken(@pokegray, 20%);
+		display: flex;
+		height: 40px;
+		width: 40px;
+		.transition();
+		&:hover {
+			box-shadow: 2px 2px 3px darken(@pokegray, 20%);
+		}
+
+		&._color_bug {
+			.cardStyler(@typeBug);
+		}
+		&._color_dragon {
+			.cardStyler(@typeDragon);
+		}
+		&._color_electric {
+			.cardStyler(@typeElectric);
+		}
+		&._color_fairy {
+			.cardStyler(@typeFairy);
+		}
+		&._color_fire {
+			.cardStyler(@typeFire);
+		}
+		&._color_flying {
+			.cardStyler(@typeFlying);
+		}
+		&._color_grass {
+			.cardStyler(@typeGrass);
+		}
+		&._color_normal {
+			.cardStyler(@typeNormal);
+		}
+		&._color_poison {
+			.cardStyler(@typePoison);
+		}
+		&._color_water {
+			.cardStyler(@typeWater);
+		}
+	}
+	.nav__backlink svg {
+		margin: auto;
+	}
+
 @media all and (max-width: 479px) {
 	.pokelist__title {
 		font-size: 2.2em;
@@ -281,7 +463,16 @@ h1:before {
 		height: 250px;
 		height: 250px;
 		width: 190px;
-	}	
+	}
+	.pokedetail {
+		flex-flow: row nowrap;
+	}
+	.pokedetail__imageWrap {
+		width: 33.3%;
+	}
+	.pokedetail__info {
+		width: 66.6%;
+	}
 }
 @media all and (min-width: 1024px) {
 	.wrapperOuter {

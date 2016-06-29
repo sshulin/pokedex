@@ -1,0 +1,14 @@
+{
+  "id": "018",
+  "name": "pidgeot",
+  "types": [
+    {
+      "class": "normal",
+      "text": "normal"
+    }, {
+      "class": "flying",
+      "text": "flying"
+    }
+  ],
+  "description": "Pidgeot is an avian Pokémon with large wings, sharp talons, and a short, hooked beak. Its glossy plumage is mostly brown with cream-colored underparts and flight feathers. Its head is decorated with a red and yellow crest that is nearly as long as its body. The fan-like feathers of its tail are red. Its beak and legs are pink, and there are angular black markings around its eyes."
+}

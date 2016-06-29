@@ -1,0 +1,15 @@
+{
+  "id": "006",
+  "name": "charizard",
+  "color": "red",
+  "types": [
+    {
+      "class": "fire",
+      "text": "fire"
+    }, {
+      "class": "flying",
+      "text": "flying"
+    }
+  ],
+  "description": "Charizard is a draconic, bipedal Pokémon. It is primarily orange with a cream underside from the chest to the tip of its tail, which burns with a sizable flame. Charizard has a long neck, small blue eyes, raised nostrils, and two blunt horns protruding from the back of its rectangular head. There are two fangs visible in the upper jaw when its mouth is closed. Two large wings with teal undersides sprout from its back, and a horn-like appendage juts out from the third joint of each wing. Charizard's arms are short and skinny compared to its robust belly, and each limb has three white claws. It has stocky legs and cream-colored soles under its feet."
+}

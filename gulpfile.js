@@ -44,7 +44,10 @@ gulp.task('scripts', function(){
 	return gulp.src([
 				'js/angular/poke-list/poke-list.module.js', 
 				'js/angular/poke-list/poke-list.component.js', 
-				'js/angular/app.module.js'
+				'js/angular/poke-detail/poke-detail.module.js',
+				'js/angular/poke-detail/poke-detail.component.js',  
+				'js/angular/app.module.js',
+				'js/angular/app.config.js'
 			])
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('public/js'))

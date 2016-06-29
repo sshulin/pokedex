@@ -1,0 +1,14 @@
+{
+  "id": "015",
+  "name": "beedrill",
+  "types": [
+    {
+      "class": "bug",
+      "text": "bug"
+    }, {
+      "class": "poison",
+      "text": "poison"
+    }
+  ],
+  "description": "Beedrill mostly resembles a bipedal, yellow wasp; however, it only has four legs instead of six and lacks pigment pits. Beedrill's head is round with a slightly pointed mouth, large, red eyes, and black antennae with a sharp bend in the middle. Its forelegs are tipped with long, conical stingers. It stands on its other two legs, which are long, segmented, and insectoid in shape. Beedrill has two pairs of rounded, veined wings, and another stinger on its yellow-and-black striped abdomen."
+}

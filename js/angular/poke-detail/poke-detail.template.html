@@ -1,0 +1,25 @@
+<div class="nav">
+	<a class="nav__backlink _color_{{ $ctrl.pokemon.types[0].class }}" href="#!/pokemons/">
+		<svg height="12" width="30">
+		  <path d="M 30 6 H 0 L 10 0 L 10 12 L 0 6 Z" stroke-width="1" stroke="black" />
+		</svg>
+	</a>
+</div>
+<div class="pokedetail _color_{{ $ctrl.pokemon.types[0].class }}">
+	<div class="pokedetail__imageWrap">
+		<img src="img/{{ $ctrl.pokemon.name }}.png" class="pokedetail__imageItem">
+	</div>
+	<div class="pokedetail__info">
+		<div class="pokedetail__title">
+			{{ $ctrl.pokemon.name }}
+		</div>
+		<div class="pokedetail__typeList">
+			<div ng-repeat="type in $ctrl.pokemon.types" class="pokedetail__oneType _type_{{ type.class }}">
+				{{ type.text }}
+			</div>
+		</div>
+		<div class="pokedetail__text">
+			{{ $ctrl.pokemon.description }}
+		</div>
+	</div>
+</div>

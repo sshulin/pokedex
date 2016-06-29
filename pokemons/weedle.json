@@ -1,0 +1,14 @@
+{
+  "id": "013",
+  "name": "weedle",
+  "types": [
+    {
+      "class": "bug",
+      "text": "bug"
+    }, {
+      "class": "poison",
+      "text": "poison"
+    }
+  ],
+  "description": "Weedle is a small larva Pokémon with a segmented body ranging in color from yellow to reddish-brown. Combined with its red nose and feet, Weedle's bright coloration wards off its enemies. Weedle has a conical, two-inch venomous stinger on its head and a barbed one on its tail, but its other body parts are spherical."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "011",
+  "name": "metapod",
+  "types": [
+    {
+      "class": "bug",
+      "text": "bug"
+    }
+  ],
+  "description": "Metapod resembles a chrysalis. Its soft body is protected by a hard outer shell while it undergoes metamorphosis. While this shell is said to be as hard as steel, a sudden, powerful impact could cause its tender body to pop out, leaving it completely exposed. Metapod generally remains motionless, preparing its soft innards for evolution inside its hard shell. If an enemy discovers Metapod, it is unable to do anything other than harden its outer shell. Metapod lives in forests."
+}

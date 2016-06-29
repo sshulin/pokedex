@@ -1,0 +1,14 @@
+{
+  "id": "017",
+  "name": "pidgeotto",
+  "types": [
+    {
+      "class": "normal",
+      "text": "normal"
+    }, {
+      "class": "flying",
+      "text": "flying"
+    }
+  ],
+  "description": "Pidgeotto is a raptor-like avian Pokémon. It is covered with brown feathers, and has a cream-colored face and underside. It has a crest of pinkish-red feathers on its head and black, angular markings behind its eyes. The plumage of its tail has alternating red and yellow feathers with ragged tips. Its beak and legs are pink, and it has powerful, sharp talons that it uses to grasp prey."
+}

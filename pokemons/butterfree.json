@@ -1,0 +1,14 @@
+{
+  "id": "012",
+  "name": "butterfree",
+  "types": [
+    {
+      "class": "bug",
+      "text": "bug"
+    }, {
+      "class": "flying",
+      "text": "flying"
+    }
+  ],
+  "description": "Butterfree resembles a vaguely anthropomorphic butterfly with a purple body. Unlike true insects, it only has two body segments and four light blue legs. The upper pair of legs resemble small, three-fingered hands, while the lower pair resemble long, digit-less feet. Butterfree has two black antennae, a light blue snout with two fangs underneath, and large, red compound eyes. Its two pairs of veined wings are white with black accents. The oval scales of a female Butterfree's lower wings are black, but white in males."
+}
