@@ -39,20 +39,39 @@ gulp.task('less', function(){
 
 })
 
+// Concatenate minified angular core files
+gulp.task('ng-core', function(){
+	return gulp.src([
+			'node_modules/angular/angular.min.js',
+			'node_modules/angular-route/angular-route.min.js'
+		])
+		.pipe(concat('ng-core.js'))
+		.pipe(gulp.dest('public/js'))
+})
+
+
 // Concatenate & minify JS
+gulp.task('ng-custom', function(){
+	return gulp.src([
+			'js/angular/poke-list/poke-list.module.js', 
+			'js/angular/poke-list/poke-list.component.js', 
+			'js/angular/poke-detail/poke-detail.module.js',
+			'js/angular/poke-detail/poke-detail.component.js',  
+			'js/angular/app.module.js',
+			'js/angular/app.config.js'
+		])
+		.pipe(concat('ng-custom.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('public/js'))
+		.pipe(connect.reload());
+})
+
 gulp.task('scripts', function(){
 	return gulp.src([
-				'js/angular/poke-list/poke-list.module.js', 
-				'js/angular/poke-list/poke-list.component.js', 
-				'js/angular/poke-detail/poke-detail.module.js',
-				'js/angular/poke-detail/poke-detail.component.js',  
-				'js/angular/app.module.js',
-				'js/angular/app.config.js'
-			])
-		.pipe(concat('all.js'))
-		.pipe(gulp.dest('public/js'))
-		.pipe(rename('all.min.js'))
-		.pipe(uglify())
+			'public/js/ng-core.js',
+			'public/js/ng-custom.js'
+		])
+		.pipe(concat('all.min.js'))
 		.pipe(gulp.dest('public/js'))
 		.pipe(connect.reload());
 })
@@ -65,4 +84,4 @@ gulp.task('watch', function(){
 })
 
 
-gulp.task('default', ['lint', 'connect', 'less', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'connect', 'less', 'ng-core', 'ng-custom', 'scripts', 'watch']);
